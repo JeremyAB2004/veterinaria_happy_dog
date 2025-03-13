@@ -24,7 +24,6 @@
                 <a class="navbar-brand d-flex align-items-center mr-5" href="index.html">
                     <img src="img/logo.jpeg" alt="Logo Happy Dog">
                     <span class="fw-bold">Happy Dog</span>
-                    <span class="fw-bold">Happy Dog</span>
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVeterinaria" aria-controls="navbarVeterinaria" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,13 +116,30 @@
 
         <section class="py-5">
             <div class="container">
-                <h1 class="text-center my-4">Gestión de Mascotas</h1>
-                <div class="list-group">
-                    <a href="mascotas-registrar.html" class="list-group-item list-group-item-action">Registrar Nueva Mascota</a>
-                    <a href="mascotas-historial.html" class="list-group-item list-group-item-action">Consultar Historial de la Mascota</a>
-                    <a href="mascotas-modificar.html" class="list-group-item list-group-item-action">Editar Datos de la Mascota</a>
-                    <a href="mascotas-eliminar.html" class="list-group-item list-group-item-action">Eliminar Mascota</a>
-                </div>
+                <h1 class="text-center my-4">Registrar Nueva Mascota</h1>
+                <form id="formRegistrarMascota">
+                    <div class="mb-3">
+                        <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
+                        <input type="text" class="form-control" id="nombreMascota" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="especieMascota" class="form-label">Especie</label>
+                        <input type="text" class="form-control" id="especieMascota" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="razaMascota" class="form-label">Raza</label>
+                        <input type="text" class="form-control" id="razaMascota">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edadMascota" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="edadMascota" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="propietarioMascota" class="form-label">Propietario</label>
+                        <input type="text" class="form-control" id="propietarioMascota" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </form>
             </div>
         </section>
     </main>
