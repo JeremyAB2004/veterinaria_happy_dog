@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria Happy Dog/Servicios Veterinarios</title>
+    <title>Veterinaria Happy Dog/Contacto</title>
     <link rel="shortcut icon" href="img/logo.ico">
 
     <!-- Bootstrap CSS -->
@@ -17,7 +17,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/LogIn.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/recuperar.css">
+
 </head>
 
 <body>
@@ -114,61 +119,18 @@
 
     <!-- Contenido de la página -->
     <main>
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb" class="bg-light py-3">
-            <div class="container">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Servicios Veterinarios</li>
-                </ol>
-            </div>
-        </nav>
-
-        <!-- Sección de Servicios-->
-        <section class="py-5">
-            <div class="container">
-                <article>
-                    <h1 class="display-4 fw-bold text-center mb-4">Nuestros servicios</h1>
-                    <p class="lead text-center">En Happy Dog, buscamos hacer tu vida y la de tu mascota más fácil.</p>
-                </article>
-            </div>
-        </section>
-        <section class="py-5">
-            <div class="container">
-                <div class="servicios d-flex justify-content-center gap-4">
-                    <div class="servicio text-center">
-                        <img src="img/consulta.jpg" alt="Cita Veterinaria" class="img-fluid rounded">
-                        <h3 class="mt-3">Consulta Veterinaria</h3>
-                        <p class="lead text-center">Agendá una cita con los mejores veterinarios en la zona para mantener a tú peludo saludable.</p>
-                        <button class="btn btn-uno mt-3" onclick="location.href='#'">Agenda tu cita veterinaria</button>
-                    </div>
-                    <div class="servicio text-center">
-                        <img src="img/grooming.webp" alt="Grooming" class="img-fluid rounded">
-                        <h3 class="mt-3">Grooming</h3>
-                        <p class="lead text-center">¿Quieres que tú mascota luzca fabulosa? Agendá ya una cita con nuestros groomers profesionales!</p>
-                        <button class="btn btn-uno mt-3" onclick="location.href='#'">Agenda tu cita de grooming</button>
-                    </div>
+        <div class="formulario-recuperar">
+            <h2>¿Olvidaste tu contraseña?</h2>
+            <p class="texto-ayuda">No te preocupes, nosotros te ayudamos.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
                 </div>
-            </div>
-
-            <!-- Sección #1 -->
-            <!--
-        <section class="bg-light py-5">
-            <div class="container">
-                <article>
-                    <h2 class="text-center fw-bold mb-5">Sección #1</h2>
-
-                </article>
-            </div>
-        </section>
--->
-            <!-- Sección #2 
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-5">Sección #2</h2>
-            </div>
-        </section>
-    -->
+                <button type="submit" class="btn-uno">Enviar Solicitud</button>
+            </form>
+            <p class="texto-explicativo">En breve recibirás un correo para crear una nueva contraseña.</p>
+        </div>
     </main>
 
     <!-- Pie de página -->
