@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Happy Dog</title>
+    <link rel="shortcut icon" href="img/logo.ico"> 
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+	<link rel="stylesheet" href="css/fontawesome-free/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header de la página -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center mr-5" href="index.html">
+                    <img src="img/logo.jpeg" alt="Logo Happy Dog">
+                    <span class="fw-bold">Happy Dog</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVeterinaria" aria-controls="navbarVeterinaria" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarVeterinaria">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mascotasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mascotas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mascotasDropdown">
+                                <li><a class="dropdown-item" href="mascotas-registrar.html">Registrar</a></li>
+                                <li><a class="dropdown-item" href="mascotas-modificar.html">Modificar</a></li>
+                                <li><a class="dropdown-item" href="mascotas-historial.html">Historial</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="citasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Citas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="citasDropdown">
+                                <li><a class="dropdown-item" href="citas-agendar.html">Agendar</a></li>
+                                <li><a class="dropdown-item" href="citas-programadas.html">Citas programadas</a></li>
+                                <li><a class="dropdown-item" href="citas-modificar.html">Modificar cita</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <li><a class="dropdown-item" href="servicios-disponibles.html">Servicios disponibles</a></li>
+                                <li><a class="dropdown-item" href="servicios-solicitar.html">Solicitar servicio</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Clientes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="clientesDropdown">
+                                <li><a class="dropdown-item" href="clientes-agregar.html">Agregar</a></li>
+                                <li><a class="dropdown-item" href="clientes-modificar.html">Modificar</a></li>
+                                <li><a class="dropdown-item" href="clientes-consulta.html">Consulta clientes</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="administracionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Administración
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="administracionDropdown">
+                                <li><a class="dropdown-item" href="admin-estadisticas.html">Estadísticas</a></li>
+                                <li><a class="dropdown-item" href="admin-reportes.html">Reportes</a></li>
+                                <li><a class="dropdown-item" href="admin-usuarios.html">Gestión usuarios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="login-buttons">
+                        <a href="login.html" class="btn btn-uno">Ingresar</a>
+                        <a href="registro.html" class="btn btn-dos">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página -->
+    <main>
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bg-light py-3">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Noticias Happy Dog</li>
+                </ol>
+            </div>
+        </nav>
+
+        
+
+        <section id="noticia" class="container my-5">
+            <h2>Noticia Destacada de la semana</h2>
+            <article>
+                <h2>Evento de Adopción</h2>
+                <h3>No te lo pierdas</h3>
+                <img src="img/Adopcion.jpg" alt="Evento de Adopción" class="img-fluid mb-3">
+                <p>Detalles sobre el próximo evento de adopción organizado por la veterinaria Happy Dog y marcas destacadas.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Logo e información -->
+                <div class="col-md-3 footer-column">
+                    <div class="footer-logo">
+                        <img src="img/logo.jpeg" alt="Logo Happy Dog">
+                    </div>
+                    <p>Cuidamos con amor y profesionalismo a tus mejores amigos.</p>
+                    <div class="footer-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Del Colegio de Ingenieros y Arquitectos en Curridabat, 500 metros Norte y 300 metros al Este.
+                        Campus San Pedro, San José, Costa Rica.</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> grupo5@happydog.com</p>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces Principales -->
+                <div class="col-md-2 footer-column">
+                    <h5>Servicios</h5>
+                    <ul class="footer-links">
+                        <li><a href="mascotas-registrar.html">Registro de mascotas</a></li>
+                        <li><a href="citas-agendar.html">Agenda tu cita</a></li>
+                        <li><a href="servicios-disponibles.html">Servicios veterinarios</a></li>
+                        <li><a href="servicios-solicitar.html">Solicitar servicio</a></li>
+                        <li><a href="clientes-consulta.html">Consulta clientes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Reseñas y Testimonios -->
+                <div class="col-md-3 footer-column">
+                    <h5>Reseñas y Testimonios</h5>
+                    <ul class="footer-links">
+                        <li><a href="testimonios.html">Experiencias de clientes</a></li>
+                        <li><a href="calificacion.html">Calificación de servicios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacto y Soporte -->
+                <div class="col-md-4 footer-column">
+                    <h5>Contacto y Soporte</h5>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Formulario de contacto</a></li>
+                        <li><a href="faq.html">Preguntas frecuentes</a></li>
+                    </ul>
+                    <p class="mt-3">Síguenos en redes sociales:</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pie del Footer -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Happy Dog Veterinaria. Todos los derechos reservados.</p>
+                        <div class="small mt-2">
+                            <a href="terminos.html" class="text-muted me-3">Términos y Condiciones</a>
+                            <a href="privacidad.html" class="text-muted me-3">Política de Privacidad</a>
+                            <a href="sitemap.html" class="text-muted">Mapa del Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
