@@ -107,7 +107,7 @@
             <div class="container">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Resgistre a su mascota</li>
+                    <li class="breadcrumb-item active" aria-current="page">Acá puede consultar a su compañero del hogar.</li>
                 </ol>
             </div>
         </nav>
@@ -116,29 +116,17 @@
 
         <section class="py-5">
             <div class="container">
-                <h1 class="text-center my-4">Registrar Nueva Mascota</h1>
-                <form id="formRegistrarMascota">
+                <h1 class="text-center my-4">Publicar Experiencia</h1>
+                <form id="formPublicarExperiencia">
                     <div class="mb-3">
-                        <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
-                        <input type="text" class="form-control" id="nombreMascota" required>
+                        <label for="nombreCliente" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombreCliente" required>
                     </div>
                     <div class="mb-3">
-                        <label for="especieMascota" class="form-label">Especie</label>
-                        <input type="text" class="form-control" id="especieMascota" required>
+                        <label for="experienciaCliente" class="form-label">Experiencia</label>
+                        <textarea class="form-control" id="experienciaCliente" rows="5" required></textarea>
                     </div>
-                    <div class="mb-3">
-                        <label for="razaMascota" class="form-label">Raza</label>
-                        <input type="text" class="form-control" id="razaMascota">
-                    </div>
-                    <div class="mb-3">
-                        <label for="edadMascota" class="form-label">Edad</label>
-                        <input type="number" class="form-control" id="edadMascota" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="propietarioMascota" class="form-label">Propietario</label>
-                        <input type="text" class="form-control" id="propietarioMascota" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <button type="submit" class="btn btn-primary">Publicar</button>
                 </form>
             </div>
         </section>
