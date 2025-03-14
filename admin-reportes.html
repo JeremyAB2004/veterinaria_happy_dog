@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicios.css">
 </head>
 <body>
     <!-- Header de la página -->
@@ -41,6 +42,7 @@
                                 Mascotas
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="mascotasDropdown">
+                                <li><a class="dropdown-item" href="gestion-mascotas.html">Gestión</a></li>
                                 <li><a class="dropdown-item" href="mascotas-registrar.html">Registrar</a></li>
                                 <li><a class="dropdown-item" href="mascotas-modificar.html">Modificar</a></li>
                                 <li><a class="dropdown-item" href="mascotas-historial.html">Historial</a></li>
@@ -52,6 +54,7 @@
                                 Citas
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="citasDropdown">
+                                <li><a class="dropdown-item" href="gestion-cistas.html">Gestión</a></li>
                                 <li><a class="dropdown-item" href="citas-agendar.html">Agendar</a></li>
                                 <li><a class="dropdown-item" href="citas-programadas.html">Citas programadas</a></li>
                                 <li><a class="dropdown-item" href="citas-modificar.html">Modificar cita</a></li>
@@ -64,7 +67,6 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
                                 <li><a class="dropdown-item" href="servicios-disponibles.html">Servicios disponibles</a></li>
-                                <li><a class="dropdown-item" href="servicios-solicitar.html">Solicitar servicio</a></li>
                             </ul>
                         </li>
                         
@@ -107,21 +109,26 @@
             <div class="container">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Gestión-Citas</li>
+                    <li class="breadcrumb-item active" aria-current="page">Clientes agregar</li>
                 </ol>
             </div>
         </nav>
-
-        
-
-        <section class="py-5">
+        <!-- Sección: Reportes -->
+        <section class="bg-light py-5">
             <div class="container">
-                <h1 class="text-center my-4">Gestión de Citas</h1>
-                <div class="list-group">
-                    <a href="citas-agendar.html" class="list-group-item list-group-item-action">Agendar Nueva Cita</a>
-                    <a href="citas-programadas.html" class="list-group-item list-group-item-action">Consultar Citas Programadas</a>
-                    <a href="citas-modificar.html" class="list-group-item list-group-item-action">Modificar/Cancelar Cita</a>
-                </div>
+                <h2 class="text-center fw-bold mb-5">Reportes</h2>
+                <p class="text-center">Genera y consulta reportes detallados de las actividades realizadas.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="tipo-reporte" class="form-label">Seleccionar tipo de reporte</label>
+                        <select class="form-control" id="tipo-reporte">
+                            <option>Pacientes atendidos</option>
+                            <option>Ingresos mensuales</option>
+                            <option>Servicios más usados</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-uno">Generar Reporte</button>
+                </form>
             </div>
         </section>
     </main>
@@ -151,7 +158,6 @@
                         <li><a href="mascotas-registrar.html">Registro de mascotas</a></li>
                         <li><a href="citas-agendar.html">Agenda tu cita</a></li>
                         <li><a href="servicios-disponibles.html">Servicios veterinarios</a></li>
-                        <li><a href="servicios-solicitar.html">Solicitar servicio</a></li>
                         <li><a href="clientes-consulta.html">Consulta clientes</a></li>
                     </ul>
                 </div>

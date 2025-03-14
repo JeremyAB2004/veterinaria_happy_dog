@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicios.css">
 </head>
 <body>
     <!-- Header de la página -->
@@ -108,34 +109,29 @@
             <div class="container">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Agende su cita</li>
+                    <li class="breadcrumb-item active" aria-current="page">Clientes agregar</li>
                 </ol>
             </div>
         </nav>
-
-        
-
+        <!-- Sección: Gestión de Usuarios -->
         <section class="py-5">
             <div class="container">
-                <h1 class="text-center my-4">Agendar Nueva Cita</h1>
-                <form id="formAgendarCita">
+                <h2 class="text-center fw-bold mb-5">Gestión de Usuarios</h2>
+                <p class="text-center">Administra los usuarios del sistema, asignando permisos y roles.</p>
+                <form>
                     <div class="mb-3">
-                        <label for="mascotaCita" class="form-label">Mascota</label>
-                        <input type="text" class="form-control" id="mascotaCita" required>
+                        <label for="usuario" class="form-label">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="usuario" required>
                     </div>
                     <div class="mb-3">
-                        <label for="fechaCita" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" id="fechaCita" required>
+                        <label for="rol" class="form-label">Rol</label>
+                        <select class="form-control" id="rol">
+                            <option>Administrador</option>
+                            <option>Veterinario</option>
+                            <option>Recepcionista</option>
+                        </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="horaCita" class="form-label">Hora</label>
-                        <input type="time" class="form-control" id="horaCita" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="motivoCita" class="form-label">Motivo</label>
-                        <textarea class="form-control" id="motivoCita" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Agendar Cita</button>
+                    <button type="submit" class="btn btn-uno">Asignar Rol</button>
                 </form>
             </div>
         </section>

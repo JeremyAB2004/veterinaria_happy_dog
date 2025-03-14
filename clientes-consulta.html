@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicios.css">
 </head>
 <body>
     <!-- Header de la página -->
@@ -108,34 +109,21 @@
             <div class="container">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Agende su cita</li>
+                    <li class="breadcrumb-item active" aria-current="page">Clientes consulta</li>
                 </ol>
             </div>
         </nav>
 
-        
-
-        <section class="py-5">
+        <!-- Sección: Consultar Cliente -->
+        <section class="bg-light py-5">
             <div class="container">
-                <h1 class="text-center my-4">Agendar Nueva Cita</h1>
-                <form id="formAgendarCita">
+                <h2 class="text-center fw-bold mb-5">Consultar Cliente</h2>
+                <form>
                     <div class="mb-3">
-                        <label for="mascotaCita" class="form-label">Mascota</label>
-                        <input type="text" class="form-control" id="mascotaCita" required>
+                        <label for="buscar-identificacion" class="form-label">Identificación</label>
+                        <input type="text" class="form-control" id="buscar-identificacion" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="fechaCita" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" id="fechaCita" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="horaCita" class="form-label">Hora</label>
-                        <input type="time" class="form-control" id="horaCita" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="motivoCita" class="form-label">Motivo</label>
-                        <textarea class="form-control" id="motivoCita" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Agendar Cita</button>
+                    <button type="submit" class="btn btn-uno">Buscar Cliente</button>
                 </form>
             </div>
         </section>
