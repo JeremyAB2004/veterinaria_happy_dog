@@ -1,0 +1,40 @@
+.formulario-contacto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px; /* Ancho más compacto */
+    width: 100%;
+    margin: 60px auto; /* Más margen superior e inferior */
+}
+
+.formulario-contacto h2 {
+    color: var(--primary-color); /* Título en color celeste */
+    text-align: center;
+    margin-bottom: 30px; /* Más espacio debajo del título */
+    font-size: 2rem; /* Tamaño más grande para el título */
+}
+
+.formulario-contacto .form-label {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem; /* Tamaño de fuente más pequeño para las etiquetas */
+    margin-bottom: 8px; /* Espacio entre la etiqueta y el input */
+    display: block; /* Asegura que las etiquetas estén en una línea separada */
+}
+
+.formulario-contacto .form-control {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    color: var(--dark-color);
+    font-size: 1rem;
+    width: 100%;
+}
+
+.formulario-contacto .form-control:focus {
+    border-color: var(--third-color);
+    box-shadow: 0 0 5px rgba(113, 181, 216, 0.5);
+}
