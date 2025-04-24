@@ -1,0 +1,28 @@
+.sitemap-section {
+    margin-bottom: 30px;
+}
+.sitemap-section h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.sitemap-list {
+    list-style: none;
+    padding-left: 20px;
+}
+.sitemap-list li {
+    margin-bottom: 10px;
+}
+.sitemap-list a {
+    text-decoration: none;
+    color: #0077b6;
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.sitemap-list a:hover {
+    color: #023e8a;
+    background-color: #e6f2ff;
+}
