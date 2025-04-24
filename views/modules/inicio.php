@@ -156,60 +156,39 @@
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="py-5">
+<style>
+    .testimonial-card {
+    background-color: var(--light-color);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+</style>
+
+<section class="py-5" id="seccionResenas">
     <div class="container py-4">
         <h2 class="text-center fw-bold mb-2">Lo que dicen nuestros clientes</h2>
         <p class="text-center text-muted mb-5">Experiencias de dueños que confían en nuestro cuidado</p>
-        
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="mb-4">"El trato hacia mi perrito Max fue increíble. El Dr. Ramírez se tomó el tiempo para explicarme todo el tratamiento. Sin duda el mejor veterinario de la ciudad."</p>
-                    <div class="d-flex align-items-center">
-                        <div class="testimonial-avatar">
-                            <img src="views/img/users/default/anonymous.png" alt="Cliente" class="img-fluid">
-                        </div>
-                        <div>
-                            <h6 class="mb-0 fw-bold">Laura Méndez</h6>
-                            <small class="text-muted">Dueña de Max</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="mb-4">"Mis gatos siempre reciben la mejor atención. El ambiente es tranquilo y el personal muy amable. Recomiendo totalmente Happy Dog a cualquier dueño responsable."</p>
-                    <div class="d-flex align-items-center">
-                        <div class="testimonial-avatar">
-                            <img src="views/img/users/default/anonymous.png" alt="Cliente" class="img-fluid">
-                        </div>
-                        <div>
-                            <h6 class="mb-0 fw-bold">Carlos Gutiérrez</h6>
-                            <small class="text-muted">Dueño de Luna y Sol</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="mb-4">"La cirugía de mi Toby fue un éxito total. Agradezco enormemente la profesionalidad y el seguimiento posterior. Happy Dog es sinónimo de confianza."</p>
-                    <div class="d-flex align-items-center">
-                        <div class="testimonial-avatar">
-                            <img src="views/img/users/default/anonymous.png" alt="Cliente" class="img-fluid">
-                        </div>
-                        <div>
-                            <h6 class="mb-0 fw-bold">Ana Rodríguez</h6>
-                            <small class="text-muted">Dueña de Toby</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="row g-4" id="contenedorResenasAprobadas">
+            <!-- Las reseñas aprobadas se insertarán aquí con JS -->
         </div>
     </div>
 </section>
+
 
 <!-- CTA Section -->
 <section class="cta-section">
@@ -219,3 +198,5 @@
         <a href="citas-agendar" class="btn btn-light btn-lg rounded-pill px-5 fw-semibold">Agendar una cita ahora</a>
     </div>
 </section>
+
+<script src="views/js/inicio.js"></script>

@@ -30,6 +30,21 @@ CREATE TABLE mascotas (
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS reseñas (
+    id_reseña INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_cliente VARCHAR(100) NOT NULL,
+    experiencia TEXT NOT NULL,
+    fecha_publicacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    estado ENUM('pendiente', 'aprobado', 'rechazado') DEFAULT 'pendiente',
+    calificacion INT CHECK (calificacion BETWEEN 1 AND 5)
+);
+
+INSERT INTO reseñas (nombre_cliente, experiencia, estado, calificacion)
+VALUES 
+('Juan Pérez', 'Excelente servicio, mi perro fue atendido con mucho cuidado y profesionalismo.', 'aprobado', 5),
+('María Gómez', 'Muy buena atención, los veterinarios son muy amables y explican todo claramente.', 'aprobado', 4),
+('Carlos López', 'El servicio fue bueno, aunque la espera fue un poco larga.', 'aprobado', 3);
+
 
 INSERT INTO roles (nombre)
 VALUES ('administrador'),('veterinario'),('cliente');
@@ -47,5 +62,5 @@ select * from usuarios;
 
 select * from mascotas;
 
-
+SELECT AVG(edad) as promedio FROM mascotas;
 

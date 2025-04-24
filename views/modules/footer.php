@@ -19,10 +19,10 @@
             <div class="col-md-2 footer-column">
                 <h5>Servicios</h5>
                 <ul class="footer-links">
-                    <li><a href="mascotas-registrar.html">Registro de mascotas</a></li>
-                    <li><a href="citas-agendar.html">Agenda tu cita</a></li>
+                    <li><a href="mascotas-registrar">Registro de mascotas</a></li>
+                    <li><a href="citas-agendar">Agenda tu cita</a></li>
                     <li><a href="servicios-disponibles">Servicios veterinarios</a></li>
-                    <li><a href="clientes-consulta.html">Consulta clientes</a></li>
+                    <li><a href="clientes-consulta">Consulta clientes</a></li>
                 </ul>
             </div>
             
@@ -30,8 +30,7 @@
             <div class="col-md-3 footer-column">
                 <h5>Reseñas y Testimonios</h5>
                 <ul class="footer-links">
-                    <li><a href="testimonios.html">Experiencias de clientes</a></li>
-                    <li><a href="calificacion.html">Calificación de servicios</a></li>
+                    <li><a href="resenas-publicar">Experiencias de clientes</a></li>
                 </ul>
             </div>
             
@@ -39,8 +38,8 @@
             <div class="col-md-4 footer-column">
                 <h5>Contacto y Soporte</h5>
                 <ul class="footer-links">
-                    <li><a href="contacto.html">Formulario de contacto</a></li>
-                    <li><a href="faq.html">Preguntas frecuentes</a></li>
+                    <li><a href="contacto">Nuestros contactos</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
                 </ul>
                 <p class="mt-3">Síguenos en redes sociales:</p>
                 <div class="footer-social">

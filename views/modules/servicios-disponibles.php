@@ -30,13 +30,13 @@
                     <img src="views/img/consulta.jpg" alt="Cita Veterinaria" class="img-fluid rounded">
                     <h3 class="mt-3">Consulta Veterinaria</h3>
                     <p class="lead text-center">Agendá una cita con los mejores veterinarios en la zona para mantener a tú peludo saludable.</p>
-                    <button class="btn btn-uno mt-3" onclick="location.href='#'">Agenda tu cita veterinaria</button>
+                    <button class="btn btn-uno mt-3" onclick="location.href='citas-agendar'">Agenda tu cita veterinaria</button>
                 </div>
                 <div class="servicio text-center">
                     <img src="views/img/grooming.webp" alt="Grooming" class="img-fluid rounded">
                     <h3 class="mt-3">Grooming</h3>
                     <p class="lead text-center">¿Quieres que tú mascota luzca fabulosa? Agendá ya una cita con nuestros groomers profesionales!</p>
-                    <button class="btn btn-uno mt-3" onclick="location.href='#'">Agenda tu cita de grooming</button>
+                    <button class="btn btn-uno mt-3" onclick="location.href='citas-agendar'">Agenda tu cita de grooming</button>
                 </div>
             </div>
         </div>

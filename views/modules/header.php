@@ -40,14 +40,7 @@
                         </ul>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                            <li><a class="dropdown-item" href="servicios-disponibles">Servicios disponibles</a></li>
-                        </ul>
-                    </li>
+                    
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,6 +52,17 @@
                             <li><a class="dropdown-item" href="clientes-consulta">Consulta clientes</a></li>
                         </ul>
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                            <li><a class="dropdown-item" href="servicios-disponibles">Servicios</a></li>
+                            <li><a class="dropdown-item" href="contacto">Contacto</a></li>
+                            <li><a class="dropdown-item" href="blog">Blog</a></li>
+                        </ul>
+                    </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="administracionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +70,6 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="administracionDropdown">
                             <li><a class="dropdown-item" href="admin-estadisticas">Estadísticas</a></li>
-                            <li><a class="dropdown-item" href="admin-reportes">Reportes</a></li>
                             <li><a class="dropdown-item" href="admin-usuarios">Gestión usuarios</a></li>
                         </ul>
                     </li>

@@ -118,15 +118,12 @@ if($localPath){
                     $urlParams[2] == "clientes-consulta" ||
                     $urlParams[2] == "clientes-modificar" ||
                     $urlParams[2] == "admin-estadisticas" ||
-                    $urlParams[2] == "admin-reportes" ||
                     $urlParams[2] == "admin-usuarios" ||
                     $urlParams[2] == "blog" ||
-                    $urlParams[2] == "noticias" ||
                     $urlParams[2] == "contacto" ||
                     $urlParams[2] == "servicios-disponibles" ||
-                    $urlParams[2] == "resenas-calificar" ||
+                    $urlParams[2] == "resenas-revision" ||
                     $urlParams[2] == "resenas-publicar" ||
-                    $urlParams[2] == "resenas-testimonios" ||
                     // $urlParams[2] == "" ||
                     false
 
