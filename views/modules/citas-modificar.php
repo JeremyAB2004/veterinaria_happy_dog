@@ -65,7 +65,6 @@
             <textarea class="form-control" id="notas"></textarea>
         </div>
         <button type="button" class="btn btn-success" id="btnModificarCita">Modificar Cita</button>
-        <button type="button" class="btn btn-danger" id="btnCancelarCita">Cancelar Cita</button>
     </form>
 </div>
         </div>

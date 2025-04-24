@@ -57,7 +57,7 @@ $(document).ready(function () {
                             <td colspan="5" class="text-center py-4 text-muted">
                                 <i class="fas fa-paw fa-2x mb-3"></i>
                                 <p>No tienes mascotas registradas</p>
-                                <a href="registrar-mascota" class="btn btn-primary btn-sm">
+                                <a href="mascotas-registrar" class="btn btn-primary btn-sm">
                                     Registrar mi primera mascota
                                 </a>
                             </td>

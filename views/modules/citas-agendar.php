@@ -17,9 +17,8 @@
             <form id="form-agendar-cita">
                 <div class="mb-3">
                     <label for="id_cliente" class="form-label">Cliente</label>
-                    <select class="form-control" id="id_cliente" required>
-                        <!-- Opciones de clientes se cargarán dinámicamente -->
-                    </select>
+                    <input type="hidden" id="id_cliente" value="<?php echo $usuarioLogueado['id'] ?>">
+                    <input type="text" value="<?php echo $usuarioLogueado['nombre'] ?>" class="form-control" readonly>
                 </div>
                 <div class="mb-3">
                     <label for="id_mascota" class="form-label">Mascota</label>
@@ -37,7 +36,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="estado" class="form-label">Estado</label>
-                    <select class="form-control" id="estado" required>
+                    <select class="form-control" id="estado" required disabled>
                         <option value="Pendiente">Pendiente</option>
                         <option value="Confirmada">Confirmada</option>
                         <option value="Cancelada">Cancelada</option>

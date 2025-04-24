@@ -15,34 +15,57 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="inicio">Inicio</a>
                     </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="mascotasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Mascotas
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="mascotasDropdown">
-                            <li><a class="dropdown-item" href="mascotas-gestion">Gestión</a></li>
-                            <li><a class="dropdown-item" href="mascotas-registrar">Registrar</a></li>
-                            <li><a class="dropdown-item" href="mascotas-modificar">Modificar</a></li>
-                            <li><a class="dropdown-item" href="mascotas-consulta">Consulta</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="citasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Citas
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="citasDropdown">
-                            <li><a class="dropdown-item" href="citas-gestion">Gestión</a></li>
-                            <li><a class="dropdown-item" href="citas-agendar">Agendar</a></li>
-                            <li><a class="dropdown-item" href="citas-programadas">Citas programadas</a></li>
-                            <li><a class="dropdown-item" href="citas-modificar">Modificar cita</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    
-                    <li class="nav-item dropdown">
+
+                    <?php if ($usuarioLogueado): ?>
+
+                        <?php if ($usuarioLogueado['rol'] != 2): ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="mascotasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mascotas
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="mascotasDropdown">
+                                    <li><a class="dropdown-item" href="mascotas-gestion">Gestión</a></li>
+                                    <li><a class="dropdown-item" href="mascotas-registrar">Registrar</a></li>
+                                    <li><a class="dropdown-item" href="mascotas-modificar">Modificar</a></li>
+                                    <li><a class="dropdown-item" href="mascotas-consulta">Consulta</a></li>
+                                </ul>
+                            </li>
+                        <?php endif ?>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="citasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Citas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="citasDropdown">
+                                <li><a class="dropdown-item" href="citas-gestion">Gestión</a></li>
+                                <?php if ($usuarioLogueado['rol'] != 2): ?>
+                                    <li><a class="dropdown-item" href="citas-agendar">Agendar</a></li>
+                                <?php endif ?>
+                                <li><a class="dropdown-item" href="citas-programadas">Citas programadas</a></li>
+                                <?php if ($usuarioLogueado['rol'] != 3): ?>
+                                    <li><a class="dropdown-item" href="citas-modificar">Modificar cita</a></li>
+                                <?php endif ?>
+                            </ul>
+                        </li>
+                        
+                        <?php if ($usuarioLogueado['rol'] != 3): ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="administracionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Administración
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="administracionDropdown">
+                                    <li><a class="dropdown-item" href="admin-estadisticas">Estadísticas</a></li>
+                                    <?php if ($usuarioLogueado['rol'] == 1): ?>
+                                    <li><a class="dropdown-item" href="admin-usuarios">Gestión usuarios</a></li>
+                                    <?php endif ?>
+                                    <li><a class="dropdown-item" href="resenas-revision">Revisión reseñas</a></li>
+                                </ul>
+                            </li>
+                        <?php endif ?>
+
+                    <?php endif ?>
+                        
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Clientes
                         </a>
@@ -51,28 +74,25 @@
                             <li><a class="dropdown-item" href="clientes-modificar">Modificar</a></li>
                             <li><a class="dropdown-item" href="clientes-consulta">Consulta clientes</a></li>
                         </ul>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="servicios-disponibles">Servicios</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Nosotros
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                            <li><a class="dropdown-item" href="servicios-disponibles">Servicios</a></li>
-                            <li><a class="dropdown-item" href="contacto">Contacto</a></li>
-                            <li><a class="dropdown-item" href="blog">Blog</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="blog">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="resenas-publicar">Reseñas</a>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="administracionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Administración
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="administracionDropdown">
-                            <li><a class="dropdown-item" href="admin-estadisticas">Estadísticas</a></li>
-                            <li><a class="dropdown-item" href="admin-usuarios">Gestión usuarios</a></li>
-                        </ul>
-                    </li>
+                    
                 </ul>
                 
                 <?php if ($usuarioLogueado): ?>

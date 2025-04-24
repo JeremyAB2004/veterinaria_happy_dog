@@ -79,7 +79,6 @@
                     <div class="card-body text-center p-4">
                         <h5 class="fw-bold mb-3">Consultas Generales</h5>
                         <p class="text-muted mb-3">Atención médica completa disponible 24/7 para el cuidado continuo de tu mascota.</p>
-                        <a href="servicios-consultas" class="btn btn-sm btn-outline-success rounded-pill px-3">Más información</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +89,6 @@
                     <div class="card-body text-center p-4">
                         <h5 class="fw-bold mb-3">Vacunación</h5>
                         <p class="text-muted mb-3">Protocolos actualizados para mantener a tu mascota sana y protegida ante enfermedades.</p>
-                        <a href="servicios-vacunacion" class="btn btn-sm btn-outline-success rounded-pill px-3">Más información</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +99,6 @@
                     <div class="card-body text-center p-4">
                         <h5 class="fw-bold mb-3">Cirugías</h5>
                         <p class="text-muted mb-3">Desde esterilizaciones hasta intervenciones complejas con la mejor tecnología.</p>
-                        <a href="servicios-cirugias" class="btn btn-sm btn-outline-success rounded-pill px-3">Más información</a>
                     </div>
                 </div>
             </div>
@@ -112,14 +109,14 @@
                     <div class="card-body text-center p-4">
                         <h5 class="fw-bold mb-3">Peluquería</h5>
                         <p class="text-muted mb-3">Servicio estético profesional para que tu mascota luzca y se sienta de maravilla.</p>
-                        <a href="servicios-peluqueria" class="btn btn-sm btn-outline-success rounded-pill px-3">Más información</a>
+                        
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="text-center mt-5">
-            <a href="servicios" class="btn btn-primary-custom px-4">Ver todos los servicios</a>
+            <a href="servicios-disponibles" class="btn btn-primary-custom px-4">Ver todos los servicios</a>
         </div>
     </div>
 </section>

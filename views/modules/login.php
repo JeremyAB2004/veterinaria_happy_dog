@@ -11,7 +11,12 @@
             </div>
             <div class="form-group">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu contraseña" required>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu contraseña" required>
+                    <span class="toggle-password" id="togglePassword">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
             </div>
             <p><a href="recuperar-contrasena">¿Olvidaste tu contraseña?</a></p>
             <button type="submit" class="btn-uno" style="width: 100%;">Iniciar Sesión</button>

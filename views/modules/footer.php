@@ -11,7 +11,7 @@
                     <p><i class="fas fa-map-marker-alt"></i> Del Colegio de Ingenieros y Arquitectos en Curridabat, 500 metros Norte y 300 metros al Este.
                     Campus San Pedro, San José, Costa Rica.</p>
                     <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                    <p><i class="fas fa-envelope"></i> grupo5@happydog.com</p>
+                    <p><i class="fas fa-envelope"></i> contacto@happydog.com</p>
                 </div>
             </div>
             
@@ -43,10 +43,9 @@
                 </ul>
                 <p class="mt-3">Síguenos en redes sociales:</p>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/HappyDogVet" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/HappyDogVet" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50672254473" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>

@@ -6,6 +6,10 @@ class BlogController {
         return BlogModel::mdlObtenerBlogs();
     }
 
+    public static function ctrGuardarBlog($datos) {
+        return BlogModel::mdlGuardarBlog($datos);
+    }
+
 
     /*public static function ctrConvertirEnNoticia($id_post) {
         return BlogModel::mdlConvertirEnNoticia($id_post);

@@ -1,76 +1,30 @@
 
 $(document).ready(function () {
-    cargarClientes();
+
     cargarMascotas();
 
-    // Al seleccionar una mascota, cargar automáticamente el cliente asociado
-    $("#id_cliente").change(function () {
-        let idCliente = $(this).val();
     
-        if (!idCliente) return;
-    
-        $.ajax({
-            url: "ajax/mascotas.ajax.php",
-            method: "POST",
-            data: { Tipo: "ObtenerMascotasPorCliente", id_cliente: idCliente },
-            dataType: "json",
-            success: function (response) {
-                console.log("Mascotas obtenidas:", response);
-    
-                $("#id_mascota").empty().append('<option value="">Seleccione una mascota</option>');
-    
-                if (!Array.isArray(response) || response.length === 0) {
-                    alert("No hay mascotas asociadas a este cliente.");
-                    return;
-                }
-    
-                response.forEach(mascota => {
-                    $("#id_mascota").append(`<option value="${mascota.id_mascota}">${mascota.nombre_mascota}</option>`);
-                });
-            },
-            error: function (xhr, status, error) {
-                console.error("Error al cargar mascotas:", error);
-                alert("Error al cargar mascotas.");
-            }
-        });
-    });
 });
 
-function cargarClientes() {
-    $.ajax({
-        url: "ajax/clientes.ajax.php",
-        method: "POST",
-        data: { Tipo: "ObtenerClientes" },
-        dataType: "json",
-        success: function (response) {
-            $("#id_cliente").empty().append('<option value="">Seleccione un cliente</option>');
-            response.forEach(cliente => {
-                $("#id_cliente").append(`<option value="${cliente.id_cliente}">${cliente.nombre}</option>`);
-            });
-        },
-        error: function () {
-            alert("Error al cargar clientes.");
-        }
-    });
-}
+
 
 function cargarMascotas() {
     $.ajax({
         url: "ajax/mascotas.ajax.php", // Cargamos mascotas desde su propio archivo
         method: "POST",
-        data: { Tipo: "ObtenerMascotas" },
+        data: { Tipo: "ObtenerMascotasPorCliente", id_cliente: $("#id_cliente").val() },
         dataType: "json",
         success: function (response) {
             console.log("Mascotas obtenidas:", response);
 
             if (!Array.isArray(response) || response.length === 0) {
-                alert("No hay mascotas registradas.");
+                //alert("No hay mascotas registradas.");
                 return;
             }
 
             $("#id_mascota").empty().append('<option value="">Seleccione una mascota</option>');
             response.forEach(mascota => {
-                $("#id_mascota").append(`<option value="${mascota.id_mascota}">${mascota.nombre_mascota}</option>`);
+                $("#id_mascota").append(`<option value="${mascota.id_mascota}">${mascota.nombre}</option>`);
             });
         },
         error: function (xhr, status, error) {
@@ -137,11 +91,12 @@ $(document).ready(function () {
                     response.forEach(cita => {
                         $("#listaCitas").append(`
                             <tr>
+                                <td><b>${cita.id_cita}</b></td>
+                                <td>${cita.nombre_cliente}</td>
                                 <td>${cita.fecha_cita}</td>
                                 <td>${cita.motivo}</td>
                                 <td>${cita.estado}</td>
                                 <td>${cita.notas}</td>
-                                <td>${cita.nombre_cliente}</td>
                                 <td>${cita.nombre_mascota}</td>
                             </tr>
                         `);

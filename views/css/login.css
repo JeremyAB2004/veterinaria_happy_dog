@@ -38,3 +38,22 @@
     box-shadow: 0 0 5px rgba(113, 181, 216, 0.5);
 }
 
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--primary-color);
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}

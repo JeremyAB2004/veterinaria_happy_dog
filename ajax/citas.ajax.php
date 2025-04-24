@@ -17,10 +17,10 @@ if ($_POST["Tipo"] == "ConsultarCitaPorId") {
     $tabla = "citas";
     $stmt = Connection::connect()->prepare("
         SELECT citas.*, 
-               clientes.nombre AS nombre_cliente, 
-               mascotas.nombre_mascota AS nombre_mascota 
+               usuarios.nombre AS nombre_cliente, 
+               mascotas.nombre AS nombre_mascota 
         FROM citas
-        INNER JOIN clientes ON citas.id_cliente = clientes.id_cliente
+        INNER JOIN usuarios ON citas.id_cliente = usuarios.id_usuario
         INNER JOIN mascotas ON citas.id_mascota = mascotas.id_mascota
         WHERE id_cita = :id_cita
     ");
@@ -35,9 +35,9 @@ if ($_POST["Tipo"] == "ConsultarCitaPorId") {
 if ($_POST["Tipo"] == "ConsultarCitas") {
     $tabla = "citas";
     $stmt = Connection::connect()->prepare("
-        SELECT citas.*, clientes.nombre AS nombre_cliente, mascotas.nombre_mascota AS nombre_mascota 
+        SELECT citas.*, usuarios.nombre AS nombre_cliente, mascotas.nombre AS nombre_mascota 
         FROM citas
-        INNER JOIN clientes ON citas.id_cliente = clientes.id_cliente
+        INNER JOIN usuarios ON citas.id_cliente = usuarios.id_usuario
         INNER JOIN mascotas ON citas.id_mascota = mascotas.id_mascota
         ORDER BY fecha_cita DESC
     ");

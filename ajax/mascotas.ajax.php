@@ -19,7 +19,7 @@ if ($_POST["Tipo"] == "ObtenerMascotasPorCliente") {
     require_once "../models/clientes.model.php";
 
     $tabla = "mascotas";
-    $stmt = Connection::connect()->prepare("SELECT * FROM $tabla WHERE id_cliente = :id_cliente ORDER BY nombre_mascota ASC");
+    $stmt = Connection::connect()->prepare("SELECT * FROM $tabla WHERE id_usuario = :id_cliente ORDER BY nombre ASC");
     $stmt->bindParam(":id_cliente", $_POST["id_cliente"], PDO::PARAM_INT);
     $stmt->execute();
     $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -17,11 +17,13 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
+                        <th>ID Cita</th>
+                        <th>Cliente</th>
                         <th>Fecha</th>
                         <th>Motivo</th>
                         <th>Estado</th>
                         <th>Notas</th>
-                        <th>Acciones</th>
+                        <th>Mascota</th>
                     </tr>
                 </thead>
                 <tbody id="listaCitas">
