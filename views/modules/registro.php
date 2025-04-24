@@ -4,10 +4,19 @@
 <main>
     <div class="formulario-contacto">
         <h2>Registro de Usuario</h2>
-        <form action="#" method="post">
+        <form id="formRegistro" method="post">
             <div class="form-group">
                 <label for="nombre" class="form-label">Nombre Completo</label>
-                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre completo" required>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+            </div>
+            <form >
+            <div class="form-group">
+                <label for="primer_apellido" class="form-label">Primer apellido</label>
+                <input type="text" id="primer_apellido" name="primer_apellido" class="form-control" placeholder="Ingresa tu primer apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="segundo_apellido" class="form-label">Segundo apellido</label>
+                <input type="text" id="segundo_apellido" name="segundo_apellido" class="form-control" placeholder="Ingresa tu segundo apellido" required>
             </div>
             <div class="form-group">
                 <label for="telefono" class="form-label">Teléfono</label>
@@ -23,6 +32,8 @@
             </div>
             <button type="submit" class="btn-uno" style="width: 100%;">Registrarse</button>
         </form>
+        <div id="mensajeRegistro" style="margin-top: 10px;"></div>
     </div>
-
 </main>
+
+<script src="views/js/registro.js"></script>

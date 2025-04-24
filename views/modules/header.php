@@ -24,7 +24,7 @@
                             <li><a class="dropdown-item" href="mascotas-gestion">Gestión</a></li>
                             <li><a class="dropdown-item" href="mascotas-registrar">Registrar</a></li>
                             <li><a class="dropdown-item" href="mascotas-modificar">Modificar</a></li>
-                            <li><a class="dropdown-item" href="mascotas-historial">Historial</a></li>
+                            <li><a class="dropdown-item" href="mascotas-consulta">Consulta</a></li>
                         </ul>
                     </li>
                     
@@ -72,10 +72,22 @@
                     </li>
                 </ul>
                 
-                <div class="login-buttons">
-                    <a href="login" class="btn btn-uno">Ingresar</a>
-                    <a href="registro" class="btn btn-dos">Registrarse</a>
-                </div>
+                <?php if ($usuarioLogueado): ?>
+                    <div class="dropdown">
+                        <button class="btn btn-uno dropdown-toggle" type="button" id="usuarioDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?= htmlspecialchars($usuarioLogueado['correo']) ?>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="usuarioDropdown">
+                            <li><a class="dropdown-item text-danger" href="logout">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                <?php else: ?>
+                    <div class="login-buttons">
+                        <a href="login" class="btn btn-uno">Ingresar</a>
+                        <a href="registro" class="btn btn-dos">Registrarse</a>
+                    </div>
+                <?php endif; ?>
+
             </div>
         </div>
     </nav>
