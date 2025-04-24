@@ -15,3 +15,5 @@
         <p class="texto-explicativo">En breve recibirás un correo para crear una nueva contraseña.</p>
     </div>
 </main>
+
+<script src="views/js/recuperar-contrasena.js"></script>

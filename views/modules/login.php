@@ -4,7 +4,7 @@
 <main>
     <div class="formulario-login">
         <h2>Iniciar Sesión</h2>
-        <form action="#" method="post">
+        <form id="form" method="post">
             <div class="form-group">
                 <label for="email" class="form-label">Correo Electrónico</label>
                 <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
@@ -18,3 +18,5 @@
         </form>
     </div>
 </main>
+
+<script src="views/js/login.js"></script>

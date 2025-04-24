@@ -1,11 +1,13 @@
 <?php
 
 date_default_timezone_set('America/Costa_Rica');
-session_start();
-/*if (!session_start())
-{
-    throw new RuntimeException('Failed to start the session');
-}*/
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+$usuarioLogueado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : null;
+
 header("Access-Control-Allow-Origin: *");
 header('Access-Control-Allow-Headers: Content-Type');
 
@@ -61,6 +63,12 @@ if($localPath){
     <title>Veterinaria Happy Dog</title>
     <link rel="shortcut icon" href="views/img/logo.ico"> 
 
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -93,9 +101,11 @@ if($localPath){
                     $urlParams[2] == "inicio" ||
                     $urlParams[2] == "login" ||
                     $urlParams[2] == "registro" ||
+                    $urlParams[2] == "logout" ||
+                    $urlParams[2] == "sitemap" ||
                     $urlParams[2] == "recuperar-contrasena" ||
                     $urlParams[2] == "mascotas-gestion" ||
-                    $urlParams[2] == "mascotas-historial" ||
+                    $urlParams[2] == "mascotas-consulta" ||
                     $urlParams[2] == "mascotas-modificar" ||
                     $urlParams[2] == "mascotas-registrar" ||
                     $urlParams[2] == "citas-agendar" ||
@@ -144,7 +154,5 @@ if($localPath){
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- JavaScript -->
-    <script src="views/js/script.js"></script>
 </body>
 </html>

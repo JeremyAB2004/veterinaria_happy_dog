@@ -60,7 +60,7 @@
                     <div class="small mt-2">
                         <a href="terminos.html" class="text-muted me-3">Términos y Condiciones</a>
                         <a href="privacidad.html" class="text-muted me-3">Política de Privacidad</a>
-                        <a href="sitemap.html" class="text-muted">Mapa del Sitio</a>
+                        <a href="sitemap" class="text-muted">Mapa del Sitio</a>
                     </div>
                 </div>
             </div>
