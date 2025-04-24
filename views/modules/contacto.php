@@ -10,55 +10,31 @@
         </div>
     </nav>
 
-    <!-- Sección de Servicios-->
+    <!-- Sección de Contacto -->
     <section class="py-5">
         <div class="container">
-            <div class="formulario-contacto">
-                <form>
-                    <div class="text-center mb-4">
-                        <h3 style="color: var(--primary-color);">¿Tienes preguntas?</h3>
-                        <h4 style="color: var(--primary-color);">Danos tu contacto y con gusto te ayudaremos!</h4>
-                    </div>
-                    <div class="mb-3">
-                        <label for="nombreCompleto" class="form-label">Nombre completo</label>
-                        <input type="text" class="form-control" id="nombreCompleto" placeholder="Ingresa tu nombre completo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="numeroTelefonico" class="form-label">Número telefónico</label>
-                        <input type="tel" class="form-control" id="numeroTelefonico" placeholder="Ingresa tu número telefónico" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="correoElectronico" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="correoElectronico" placeholder="Ingresa tu correo electrónico" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pregunta" class="form-label">Su pregunta</label>
-                        <textarea class="form-control" id="pregunta" rows="4" placeholder="Escribe tu pregunta aquí..." required></textarea>
-                    </div>                     
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-uno">Enviar</button>
-                    </div>
-                </form>
+            <div class="text-center mb-4">
+                <h3 style="color: var(--primary-color);">¿Tienes preguntas?</h3>
+                <h4 style="color: var(--primary-color);">Contáctanos por nuestras redes sociales o envíanos un correo.</h4>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="text-center mb-4">
+                <a href="https://www.facebook.com/HappyDogVet" target="_blank" class="mx-2">
+                    <img src="views/img/facebook-icon.png" alt="Facebook" width="40">
+                </a>
+                <a href="https://www.instagram.com/HappyDogVet" target="_blank" class="mx-2">
+                    <img src="views/img/instagram-icon.png" alt="Instagram" width="40">
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="mx-2">
+                    <img src="views/img/whatsApp-icon.png" alt="WhatsApp" width="40">
+                </a>
+            </div>
+
+            <!-- Botón para enviar correo -->
+            <div class="text-center">
+                <a href="mailto:contacto@happydog.com" class="btn btn-uno">Enviar un correo</a>
             </div>
         </div>
     </section>
-
-        <!-- Sección #1 -->
-        <!--
-    <section class="bg-light py-5">
-        <div class="container">
-            <article>
-                <h2 class="text-center fw-bold mb-5">Sección #1</h2>
-
-            </article>
-        </div>
-    </section>
--->
-        <!-- Sección #2 
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5">Sección #2</h2>
-        </div>
-    </section>
--->
 </main>

@@ -1,4 +1,3 @@
-
 <!-- Contenido de la página -->
 <main>
     <!-- Breadcrumb -->
@@ -15,10 +14,10 @@
     <section class="py-5">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Modificar Cliente</h2>
-            <form>
+            <form id="form-modificar-cliente">
                 <div class="mb-3">
-                    <label for="modificar-identificacion" class="form-label">Identificación</label>
-                    <input type="text" class="form-control" id="modificar-identificacion" required>
+                    <label for="modificar-id" class="form-label">ID Cliente</label>
+                    <input type="text" class="form-control" id="modificar-id" required>
                 </div>
                 <div class="mb-3">
                     <label for="modificar-nombre" class="form-label">Nombre</label>
@@ -32,8 +31,14 @@
                     <label for="modificar-telefono" class="form-label">Teléfono</label>
                     <input type="tel" class="form-control" id="modificar-telefono">
                 </div>
-                <button type="submit" class="btn btn-uno">Modificar Cliente</button>
+                <div class="mb-3">
+                    <label for="modificar-direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="modificar-direccion">
+                </div>
+                <button type="button" class="btn btn-uno" id="btnModificarCliente">Modificar Cliente</button>
             </form>
         </div>
     </section>
 </main>
+
+<script src="views/js/clientes.js"></script>

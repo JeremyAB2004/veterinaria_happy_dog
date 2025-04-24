@@ -1,4 +1,3 @@
-
 <!-- Contenido de la página -->
 <main>
     <!-- Breadcrumb -->
@@ -10,29 +9,49 @@
             </ol>
         </div>
     </nav>
-    <!-- Sección: Agendar cita -->
+
+    <!-- Sección: Agendar Cita -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Agendar cita</h2>
-            <form>
+            <h2 class="text-center fw-bold mb-5">Agendar Cita</h2>
+            <form id="form-agendar-cita">
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
+                    <label for="id_cliente" class="form-label">Cliente</label>
+                    <select class="form-control" id="id_cliente" required>
+                        <!-- Opciones de clientes se cargarán dinámicamente -->
+                    </select>
                 </div>
                 <div class="mb-3">
-                    <label for="identificacion" class="form-label">Identificación</label>
-                    <input type="text" class="form-control" id="identificacion" required>
+                    <label for="id_mascota" class="form-label">Mascota</label>
+                    <select class="form-control" id="id_mascota" required>
+                        <!-- Opciones de mascotas se cargarán dinámicamente -->
+                    </select>
                 </div>
                 <div class="mb-3">
-                    <label for="correo" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="correo" required>
+                    <label for="fecha_cita" class="form-label">Fecha y Hora</label>
+                    <input type="datetime-local" class="form-control" id="fecha_cita" required>
                 </div>
                 <div class="mb-3">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" required>
+                    <label for="motivo" class="form-label">Motivo de la Cita</label>
+                    <textarea class="form-control" id="motivo" rows="3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-uno">Agendar cita</button>
+                <div class="mb-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <select class="form-control" id="estado" required>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="Confirmada">Confirmada</option>
+                        <option value="Cancelada">Cancelada</option>
+                        <option value="Completada">Completada</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="notas" class="form-label">Notas Adicionales</label>
+                    <textarea class="form-control" id="notas" rows="2"></textarea>
+                </div>
+                <button type="button" class="btn btn-uno" id="btnAgendarCita">Agendar Cita</button>
             </form>
         </div>
     </section>
 </main>
+
+<script src="views/js/citas.js"></script>

@@ -9,18 +9,15 @@
             </ol>
         </div>
     </nav>
+    
     <!-- Sección: Agregar Cliente -->
     <section class="py-5">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Agregar Cliente</h2>
-            <form>
+            <form id="form-agregar-cliente">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="identificacion" class="form-label">Identificación</label>
-                    <input type="text" class="form-control" id="identificacion" required>
                 </div>
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo</label>
@@ -30,9 +27,14 @@
                     <label for="telefono" class="form-label">Teléfono</label>
                     <input type="tel" class="form-control" id="telefono" required>
                 </div>
-                <button type="submit" class="btn btn-uno">Agregar Cliente</button>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" required>
+                </div>
+                <button type="button" class="btn btn-uno" id="btnAgregarCliente">Agregar Cliente</button>
             </form>
         </div>
     </section>
 </main>
 
+<script src="views/js/clientes.js"></script>
