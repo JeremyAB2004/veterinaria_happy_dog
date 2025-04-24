@@ -35,7 +35,7 @@ $(document).ready(function () {
     // Función para cargar las mascotas del usuario
     function cargarMascotasUsuario(idUsuario) {
         $.ajax({
-            url: "ajax/mascotas.ajax.php",
+            url: "ajax/mascotas2.ajax.php",
             method: "POST",
             dataType: "json",
             data: {
@@ -74,7 +74,7 @@ $(document).ready(function () {
     // Función para cargar los datos de una mascota específica
     function cargarDatosMascota(idMascota) {
         $.ajax({
-            url: "ajax/mascotas.ajax.php",
+            url: "ajax/mascotas2.ajax.php",
             method: "POST",
             dataType: "json",
             data: {
@@ -125,7 +125,7 @@ $(document).ready(function () {
         };
 
         $.ajax({
-            url: "ajax/mascotas.ajax.php",
+            url: "ajax/mascotas2.ajax.php",
             method: "POST",
             dataType: "json",
             data: {

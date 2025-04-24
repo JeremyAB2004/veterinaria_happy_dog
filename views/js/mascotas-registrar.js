@@ -1,7 +1,7 @@
 /*
 function registrarMascota(data) {
     $.ajax({
-        url: "ajax/mascotas.ajax.php",
+        url: "ajax/mascotas2.ajax.php",
         method: "POST",
         data: {
             datos: JSON.stringify(data),
@@ -24,7 +24,7 @@ function registrarMascota(data) {
 
 function obtenerMascotas(id_cliente) {
     $.ajax({
-        url: "ajax/mascotas.ajax.php",
+        url: "ajax/mascotas2.ajax.php",
         method: "POST",
         data: {
             datos: JSON.stringify({ id_cliente }),
@@ -60,7 +60,7 @@ $(document).ready(function () {
       };
 
       $.ajax({
-          url: "ajax/mascotas.ajax.php",
+          url: "ajax/mascotas2.ajax.php",
           method: "POST",
           dataType: "json",
           data: {
